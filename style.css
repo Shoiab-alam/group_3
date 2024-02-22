@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header {
+  width: 100%;
+  height: 520px;
+  background: url("images/laptop.webp") no-repeat center center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.search {
+  background: #f1f1f1;
+  border-radius: 20px;
+  width: 400px;
+}
+.search input {
+  border: none;
+  background: none;
+}
+.search:focus {
+  background: none;
+  border: none;
+}
+.search i {
+  padding: 0px 15px;
+  opacity: 0.6;
+}
+nav {
+  background: white;
+}
+.computer {
+  position: absolute;
+  top: 358px;
+  left: 200px;
+  color: white;
+}
+
+.posts{
+  width: 1040px;
+  padding: 5px;
+  margin: auto;
+  border-bottom: 1px solid #ccc;
+}
+.posts1{
+  width: 1040px;
+  padding: 5px;
+  margin: auto;
+}
+.change {
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.change:hover {
+  color: black;
+}
+
+.active {
+  color: black;
+  opacity: 1;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+
+.card-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.card_1_watch {
+  padding-top: 15px;
+}
+
+.lightgray {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.dropdown-menu.show {
+  margin-left: -142px;;
+}
+
+.login-form {
+  width: 800px;
+  height: 513px;
+  border: 1px solid black;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  background:white;
+}
+
+.login-form {
+  width: 736px;
+  height: 513px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  z-index: 2; /* Ensure the form appears above the overlay */
+  border-radius: 5px;
+}
+.sign {
+  cursor: pointer;
+}
+
+.custom-modal-header {
+  color: #008a45;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.login {
+  background: url('images/login.svg') no-repeat center;
+  background-size: cover;
+}
+
+/* Styles for the overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 1; /* Ensure the overlay is behind the form */
+}
+.close {
+  position: absolute;
+  right:0;
+  width: 28px;
+  height: 28px;
+  opacity: 80%;
+  border-radius: 15px;
+  top:-45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:rgb(152, 146, 146);
+  font-size: 20px;
+}
+
+
+.popup{
+  cursor: pointer;
+}
+.hidden, .small-login {
+  display: none;
+}
+.small-login {
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  background: white;
+  display: flex;
+  box-shadow: 0 8px 24px #00000040;
+  display: none;
+}
+.pencil {
+  background: linear-gradient(180deg, #FF5C5C 0%, #F0568A 100%);
+  width:54px;
+  height:54px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  display: none;
+  cursor: pointer;
+}
+.filter {
+  display: none;
+}
+
+@media screen and (max-width: 1200px){
+  .posts {
+      width: 800px;
+      border-bottom:0px;
+      display: none;
+  }
+  .posts1 {
+    width: 800px;
+  }
+
+
+}
+
+@media only screen and (max-width:992px){
+  nav {
+      display: none;
+  }
+
+  header {
+      height: 236px;
+      width: 100%;
+  }
+
+  .computer {
+      top:100px;
+      left:100px;
+  }
+
+  .col-right, .section2 {
+      display: none;
+  }
+  .posts {
+      display: none;
+      width: 400px;
+  }
+  .small-login{
+    display: none;
+  }
+
+  .pencil {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .filter {
+    display: block;
+  }
+
+
+}
+@media only screen and (max-width:850px){
+  .posts {
+    width: 600px;
+
+}
+.posts1 {
+  width: 600px;
+}
+.computer {
+  top:130px;
+  left:30px;
+}
+}
+
+@media only screen and (max-width:650px){
+  .posts {
+    width: 470px;
+
+}
+.posts1 {
+  width: 470px;
+}
+.computer {
+  top:130px;
+  left:20px;
+}
+
+
+}
